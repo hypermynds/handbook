@@ -1,0 +1,189 @@
+# Setting up your computer
+
+## Security and privacy configuration
+
+To mantain an high standard of security for personal laptop all the employees
+must follow these guidelines:
+
+* Computers must use hard drive encryption:
+    1. choose Apple menu (&#63743;) then *System Preferences* and click *Security & Privacy*;
+    2. click the *FileVault* tab;
+    3. click Turn On FileVault;
+    4. choose to create a local recovery key and communicate the recovery key
+       to your manager (do not use instant messaging or mail message).
+
+    ```{r filevault_recovery_key, fig.align = 'center', echo=FALSE, out.width='100%'}
+    knitr::include_graphics("figures/setting_up_your_computer/filevault_recovery_key.png")
+    ```
+
+* Firewall must be enabled:
+    1. choose Apple menu (&#63743;) then *System Preferences* and click *Security & Privacy*;
+    2. click the *Firewall* tab;
+    3. click *Turn On Firewall* button.
+
+    ```{r firewall_enabled, fig.align = 'center', echo=FALSE, out.width='100%'}
+    knitr::include_graphics("figures/setting_up_your_computer/firewall_enabled.png")
+    ```
+
+* Disable automatic login and require the password when waking from sleep (if
+  *FileVault* is activated then automatic login is already disabled):
+    1. choose Apple menu (&#63743;) then *System Preferences* and click *Security & Privacy*;
+    2. click the *General* tab;
+    3. select the option to require password *immediately* after sleep or
+       screen saver begin.
+
+    ```{r security_general_tab, fig.align = 'center', echo=FALSE, out.width='100%'}
+    knitr::include_graphics("figures/setting_up_your_computer/security_general_tab.png")
+    ```
+
+## How to install the software using Homebrew
+
+[Homebrew](https://brew.sh/) is the easiest way to install the software and
+keep it updated. To install Homebrew execute the following command in the
+Terminal and follow the instructions:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Once that Homebrew has been installed close the Terminal and open it again, you
+can check if everything is ok executing the command `brew --version`, you will
+see something like this:
+
+```
+> brew --version
+Homebrew 3.3.9                                                                                                                                                                                                                                               │
+Homebrew/homebrew-core (git revision 8600fa3966f; last commit 2021-12-21)
+Homebrew/homebrew-cask (git revision 17172f9d63; last commit 2021-12-21)
+```
+
+To complete the Homebrew setup you should install also
+[`brew-cask-update`](https://github.com/buo/homebrew-cask-upgrade) executing
+the command:
+
+```bash
+brew tap buo/cask-upgrade
+```
+
+### Keep everything updated
+
+Homebrew handles the updates of installed softwares by itself, you don't need
+to download or reinstall the software checking if a new version of some package
+has been released. To keep everything updated you should follow the steps:
+
+1. command `brew update` download the updated list of the packages provided by
+   Homebrew;
+2. command `brew outdated` gives you the list of outdated packages, so you can
+   check if something will break your work;
+3. command `brew upgrade` updates all the outdated packages installing the new
+   available versions;
+4. command `brew cu` updates all the cask packages (usually ignored by the
+   `upgrade` command).
+
+### Essential commands
+
+`brew doctor`
+
+:   Check your system for potential problems.
+
+`brew info <package>`
+
+:   Show summary of information about a package. 
+
+`brew install [--cask] <package>`
+
+:   Install a package or cask.
+
+`brew list`
+
+:   List all installed packages and casks.
+
+`brew outdated`
+
+:   List installed casks and packages that have an updated version available.
+
+`brew reinstall [--cask] <package>`
+
+:   Uninstall and then reinstall a package or cask.
+
+`brew search <text>`
+
+:   Perform a substring search of cask and package names.
+
+`brew uninstall <package>`
+
+:   Uninstall a package or cask.
+
+`brew update`
+
+:   Fetch the newest version of Homebrew and all packages.
+
+`brew upgrade [<package>]`
+
+:   Upgrade outdated casks and outdated packages. If cask or package are
+specified, upgrade only the given cask or package.
+
+## Setting up the R development environment
+
+[R](https://www.r-project.org/) and
+[RStudio](https://www.rstudio.com/products/rstudio/) can be installed using
+Homebrew:
+
+```
+> brew install --cask r
+...
+> brew install --cask rstudio
+...
+```
+
+RStudio is installed in your `/Applications` directory, to check if everything
+has been setup correctly it is enough to open it.
+
+### Set your Github Personal Access Token
+
+To interact with private repositories or avoid the GitHub rate limits for
+unauthenticated users you have to create a GitHub Personal Access Token:
+
+Open R or RStudio and execute the following commands:
+
+```r
+install.packages('usethis')
+usethis::create_github_token()
+```
+
+R will open your browser and redirect it to the page for creating the token
+(probably it prompt for your password), set the name of the token to "R" and
+the expiration time to 90 days (tokens without expiration are unsecure), leave
+everything else untouched and click the button "Create token" at the and of the
+page.
+
+```{r github_create_new_pat, fig.align = 'center', echo=FALSE, out.width='100%'}
+knitr::include_graphics("figures/setting_up_your_computer/github_create_a_new_pat.png")
+```
+
+GitHub will show you the new created token (the ugly string with green
+background), copy it and close the page.
+
+```{r github_new_pat, fig.align = 'center', echo=FALSE, out.width='100%'}
+knitr::include_graphics("figures/setting_up_your_computer/github_new_pat.png")
+```
+
+Execute the following R command:
+
+```r
+usethis::edit_r_eviron()
+```
+
+Now the file `~/.Renviron` will be opened with your preferred editor, now you
+can add (or update) the line:
+
+```
+GITHUB_PAT=<PUT HERE THE GITHUB TOKEN AND NOT THESE MEANINGLESS WORDS>
+```
+
+For security reasons it is a good idea to change the permissions of
+`~/.Renviron` executing the following command in the Terminal:
+
+```bash
+chmod 0600 ~/.Renviron
+```

@@ -1,0 +1,4 @@
+delete_merged_file: true
+rmd_files:
+  - index.Rmd
+  - setting_up_your_computer.Rmd
