@@ -22,6 +22,11 @@ jobs:
 
       - uses: r-lib/actions/setup-renv@v1
 
+      - name: Install dependencies
+        env:
+          R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
+        run: Rscript -e "install.packages('bookdown')"
+
       - name: Cache bookdown results
         uses: actions/cache@v2
         with:
