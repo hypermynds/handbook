@@ -1,5 +1,7 @@
 ---
 title: 'The Hypermynds Employee Handbook'
+author: 'The Hypermynds Team'
+date: "`r format(Sys.Date(), '%d/%m/%Y')`"
 ---
 
 # Introduction
