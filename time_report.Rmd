@@ -1,0 +1,33 @@
+# Time report
+
+Like in many other companies, @Hypermynds we need to track how much time is
+dedicated by each employee to the various projects that have been assigned to
+him/her. This is very important for tracking billable and non-billable
+projects, as well as to manage tax incentives on research and development
+activities.
+
+[Clockify](https://clockify.me/) is the tool that we use to fill the weekly
+timesheet. You can access the [dashboard](https://clockify.me/timesheet) as soon
+as your manager have invited you on the platform (you should receive an
+invitation email).
+
+It is mandatory to fill the time report at the end of each working day or - at
+least - at the end of the working week. In the weekly timesheet you have to add
+a new row for each specific project/task you have worked on, providing the
+total amount of hours/minutes dedicated.
+
+```{r clockify_dashboard, fig.align = 'center', echo=FALSE, out.width='100%'}
+knitr::include_graphics("figures/time_report/clockify_dashboard.png")
+```
+
+By clicking on the button with three vertical dots next to the hours/minutes
+cell you can also specify start/end times and a description.
+
+```{r clockify_edit_form, fig.align = 'center', echo=FALSE, out.width='30%'}
+knitr::include_graphics("figures/time_report/clockify_edit_form.png")
+```
+
+You will find special projects to handle time off (vacation, sick leave,
+half-day, etc) and for admin activities (staff meetings, etc). If you are unsure
+how to fill the timesheet report or if you think you have worked on a project
+not yet defined on the platform, just ask your manager.
