@@ -1,0 +1,10 @@
+introduction
+setting-up-your-computer
+security-and-privacy-configuration
+how-to-install-the-software-using-homebrew
+keep-everything-updated
+essential-commands
+setting-up-the-r-development-environment
+set-your-github-personal-access-token
+slack
+time-report
