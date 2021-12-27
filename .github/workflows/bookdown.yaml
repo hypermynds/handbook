@@ -25,7 +25,7 @@ jobs:
       - name: Install dependencies
         env:
           R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
-        run: Rscript -e "install.packages('bookdown', 'bslib', 'downlit', 'xml2')"
+        run: Rscript -e "install.packages(c('bookdown', 'bslib', 'downlit', 'xml2'))"
 
       - name: Cache bookdown results
         uses: actions/cache@v2
