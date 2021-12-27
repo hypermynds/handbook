@@ -52,7 +52,7 @@ see something like this:
 
 ```
 > brew --version
-Homebrew 3.3.9                                                                                                                                                                                                                                               │
+Homebrew 3.3.9
 Homebrew/homebrew-core (git revision 8600fa3966f; last commit 2021-12-21)
 Homebrew/homebrew-cask (git revision 17172f9d63; last commit 2021-12-21)
 ```
@@ -187,3 +187,17 @@ For security reasons it is a good idea to change the permissions of
 ```bash
 chmod 0600 ~/.Renviron
 ```
+
+## Slack
+
+[Slack](https://slack.com/) is the communication platform we use @Hypermynds to
+chat, interact, manage projects and share thoughts about work and life.
+
+To install Slack on your laptop you can use Homebrew:
+
+```
+> brew install --cask slack
+```
+
+Then you can access using your work email that you should have received from
+your manager.
