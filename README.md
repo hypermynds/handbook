@@ -1,2 +1,3 @@
 # handbook
-This is the introduction to Hypermynds
+
+This is the introduction to Hypermynds.
