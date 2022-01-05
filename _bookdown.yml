@@ -1,5 +1,7 @@
 delete_merged_file: true
 rmd_files:
   - index.Rmd
+  - introduction.Rmd
   - setting_up_your_computer.Rmd
   - time_report.Rmd
+  - absence_from_work.Rmd

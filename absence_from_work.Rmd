@@ -1,0 +1,39 @@
+# Absence from work
+
+It may happen that you have to take some time off basically for two reasons:
+either because you have taken vacation or because you don't feel well.
+
+## Paid Time Off
+
+Your Hypermynds employment contract includes a number of hours per year that you
+can take as paid leave. In particular, these are:
+
+- 26 days of vacation and
+- 32 hours of permits
+
+We ask you to [track your time off](https://clockify.me/timesheet) so we can
+properly compensate you for unsued time. Your vacation time is prorated your
+first year working @Hypermynds but, if you need more time off, you can go
+negative with basicly no effects.
+
+In principle, it is possible to request vacations and permits at any time of the
+year, compatibly with the workload and deadlines of your team and always sharing
+it in advance with your manager.
+
+To formalize the request it is necessary to send an email to your manager using
+the following scheme:
+
+- **Subject**: Vacation Request / Permit Request
+- **Text**: Indicate exactly the days/hours you intend to request
+- **Reason**: A concise description of the reason for the request
+
+## Sick days
+
+In case you feel unwell please let your manager know as soon as possible so that
+your workload can be redistributed among other colleagues.
+
+Usually your doctor decides how many days you need to get back into shape. In
+this case it is mandatory to ask your doctor for the **digital certificate** and
+communicate the protocol number to your manager. This way, Hypermynds will be
+able to open a file for you with the National Institute for Social Security
+(INPS).
