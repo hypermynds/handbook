@@ -1,3 +1,19 @@
-# handbook
+# The Hypermynds Employee Handbook
 
-This is the introduction to Hypermynds.
+<!-- badges: start -->
+[![bookdown](https://github.com/hypermynds/handbook/workflows/bookdown/badge.svg)](https://github.com/hypermynds/handbook/actions)
+<!-- badges: end -->
+
+This handbook is designed to contain all the answers to questions a new employee
+at Hypermynds may have. At the moment the document is still work in progress,
+therefore the contents will be added on a case-by-case basis over the next few
+weeks.
+
+The topics that will be covered are many, from the more technical ones related
+to the initial setup of the laptop to those more related to life in the company.
+
+Of course new contributions to the handbook are warmly welcomed: if you think
+that something is missing you can try to write a section by your own and propose
+a [Pull Request](https://github.com/hypermynds/handbook/pulls) or suggest the
+missing content opening an
+[Issue](https://github.com/hypermynds/handbook/issues) on GitHub.
