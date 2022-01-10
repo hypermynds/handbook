@@ -1,0 +1,12 @@
+### Comments
+
+1. Paragraph 2.2: When you install HomeBrew, it could ask your Laptop password
+2. Paragraph 2.3.1: When you try to open R or Rstudio, it could ask you to install Rosetta as well.
+3. Paragraph 2.3.1: When you type
+
+```
+install.packages('usethis')
+usethis::create_github_token()
+```
+
+it could ask you to insert the Secure CRAN mirror.
