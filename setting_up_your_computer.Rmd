@@ -171,7 +171,7 @@ knitr::include_graphics("figures/setting_up_your_computer/github_new_pat.png")
 Execute the following R command:
 
 ```r
-usethis::edit_r_eviron()
+usethis::edit_r_environ()
 ```
 
 Now the file `~/.Renviron` will be opened with your preferred editor, now you
