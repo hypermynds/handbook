@@ -19,3 +19,8 @@ that something is missing you can try to write a section by your own and propose
 a [Pull Request](https://github.com/hypermynds/handbook/pulls) or suggest the
 missing content opening an
 [Issue](https://github.com/hypermynds/handbook/issues) on GitHub.
+
+## A new section
+
+This is an example paragraph.
+
