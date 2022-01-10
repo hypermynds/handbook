@@ -10,5 +10,3 @@ usethis::create_github_token()
 ```
 
 it could ask you to insert the Secure CRAN mirror.
-
-TEST TEST TEST
