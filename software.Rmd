@@ -1,0 +1,12 @@
+# Software
+
+This is a preliminary list of software handbooks to start with:
+
+- [R Introduction](https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf)
+- [R For Data Science](https://r4ds.had.co.nz/introduction.html)
+- [Tidyverse](https://www.tidyverse.org/packages/)
+- [Magrittr](https://magrittr.tidyverse.org)
+- [Lubridate](https://lubridate.tidyverse.org)
+- [R Shiny](https://shiny.rstudio.com)
+- [R6 Classes](https://adv-r.hadley.nz/r6.html)
+- [Command Line](https://github.com/jlevy/the-art-of-command-line)
