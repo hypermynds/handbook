@@ -10,8 +10,8 @@ terminal and execute the following commands:
 > git config --global user.email "your_email@hypermynds.com"
 ```
 
-GitHub no longer accept the password authentication since August 2021, now is
-necessary a SSH key to access to your repositories.
+GitHub no longer accept the password authentication since August 2021, now a
+SSH key must be used to access to your repositories.
 
 * Open the terminal and execute the following command to create a new SSH key:
   ```
@@ -29,7 +29,8 @@ necessary a SSH key to access to your repositories.
   ```
 
 * Copy your public key with the command `pbcopy < ~/.ssh/github.pub` and paste
-  the key in the section *SSH and GPG keys* of your GitHub settings.
+  the key in the section *SSH and GPG keys* of your GitHub settings (click on
+  *New SSH key* button).
 
 ## Security and privacy configuration
 
