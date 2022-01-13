@@ -1,5 +1,6 @@
 introduction
 setting-up-your-computer
+first-time-git-setup
 security-and-privacy-configuration
 how-to-install-the-software-using-homebrew
 keep-everything-updated
