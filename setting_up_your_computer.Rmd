@@ -1,5 +1,37 @@
 # Setting up your computer
 
+## First-time Git setup
+
+The first thing you should do before to use Git is set your identity, open the
+terminal and execute the following commands:
+
+```
+> git config --global user.name "Your name here"
+> git config --global user.email "your_email@hypermynds.com"
+```
+
+GitHub no longer accept the password authentication since August 2021, now a
+SSH key must be used to access to your repositories.
+
+* Open the terminal and execute the following command to create a new SSH key:
+  ```
+  > ssh-keygen -t ed25519 -C "your_email@hypermynds.com" -f ~/.ssh/github -N ""
+  ```
+
+* Open your SSH configuration file with the command `open ~/.ssh/config` (if it
+  doesn't exist create it with the command `touch ~/.ssh/config`) and add the
+  following lines:
+  ```
+  Host github.com
+      AddKeysToAgent yes
+      IdentitiesOnly yes
+      IdentityFile ~/.ssh/github
+  ```
+
+* Copy your public key with the command `pbcopy < ~/.ssh/github.pub` and paste
+  the key in the section *SSH and GPG keys* of your GitHub settings (click on
+  *New SSH key* button).
+
 ## Security and privacy configuration
 
 To mantain an high standard of security for personal laptop all the employees
