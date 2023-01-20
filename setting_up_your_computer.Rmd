@@ -1,3 +1,7 @@
+```{r panel-setup, include = FALSE}
+xaringanExtra::use_panelset()
+```
+
 # Setting up your computer
 
 ## First-time Git setup
@@ -32,10 +36,40 @@ SSH key must be used to access to your repositories.
   the key in the section *SSH and GPG keys* of your GitHub settings (click on
   *New SSH key* button).
 
-## Security and privacy configuration
+## Security and privacy configuration {.panelset}
 
 To mantain an high standard of security for personal laptop all the employees
 must follow these guidelines:
+
+### MacOS 13 Ventura {-}
+
+* Computers must use hard drive encryption:
+    1. choose Apple menu (&#63743;) then *System Settings…* and click *Privacy & Security*;
+    2. scroll until the the *FileVault* section;
+    3. click Turn On FileVault;
+    4. choose to create a local recovery key and communicate the recovery key
+       to your manager (do not use instant messaging or mail message).
+
+* Firewall must be enabled:
+    1. choose Apple menu (&#63743;) then *System Settings…* and click *Network*;
+    2. click the *Firewall* menu;
+    3. click on the toggle to turn on the firewall.
+
+    ```{r ventura_firewall_enabled, fig.align = 'center', echo=FALSE, out.width='100%'}
+    knitr::include_graphics("figures/setting_up_your_computer/ventura_firewall_enabled.png")
+    ```
+
+* Disable automatic login and require the password when waking from sleep (if
+  *FileVault* is activated then automatic login is already disabled):
+    1. choose Apple menu (&#63743;) then *System Settings…* and click *Lock Screen*;
+    2. select the option to require password *immediately* after screen saver
+       begins or display is turned off.
+
+    ```{r ventura_lock_screen, fig.align = 'center', echo=FALSE, out.width='100%'}
+    knitr::include_graphics("figures/setting_up_your_computer/ventura_lock_screen.png")
+    ```
+
+### MacOS 12 Monterey {-}
 
 * Computers must use hard drive encryption:
     1. choose Apple menu (&#63743;) then *System Preferences* and click *Security & Privacy*;
@@ -53,8 +87,8 @@ must follow these guidelines:
     2. click the *Firewall* tab;
     3. click *Turn On Firewall* button.
 
-    ```{r firewall_enabled, fig.align = 'center', echo=FALSE, out.width='100%'}
-    knitr::include_graphics("figures/setting_up_your_computer/firewall_enabled.png")
+    ```{r monterey_firewall_enabled, fig.align = 'center', echo=FALSE, out.width='100%'}
+    knitr::include_graphics("figures/setting_up_your_computer/monterey_firewall_enabled.png")
     ```
 
 * Disable automatic login and require the password when waking from sleep (if
