@@ -3,5 +3,6 @@ rmd_files:
   - index.Rmd
   - introduction.Rmd
   - setting_up_your_computer.Rmd
+  - security_and_privacy.Rmd
   - time_report.Rmd
   - absence_from_work.Rmd
