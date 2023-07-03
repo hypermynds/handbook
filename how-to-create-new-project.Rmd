@@ -1,0 +1,45 @@
+---
+title: "how-to-create-new-project"
+output: html_document
+date: "2023-07-03"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+- open github hypermynds
+- select "new"
+- scegliere un nome e impostare private
+- create a new repository
+- aprire il terminale nella cartella dove vogliamo clonare il pacchetto
+- (per spostarci all'interno del terminale usare cd nomecartella/ e ls per vedere l'elenco delle cartelle)
+- eseguiamo git clone <*> dove * è l'SSH della repository
+- aprire R, open project in a new session e apriamo il nostro pacchetto
+
+- installare il pacchetto <usethis> su R
+- lanciare usethis::create_package('.') (il punto indica che vogliamo crearlo nella cartella dove ci troviamo)
+- la DESCRIPTION contiene le informazioni del pacchetto: nome, descrizione, etc che possiamo modificare in base alle necessità. Tra gli autori lasciare sempre person("Michele Stefano", "Altieri", "msa@hypermynds.com"),role=c("aut","cre")) e aggiungere se stessi in un vettore con c()
+- la cartella R contiene i file che vengono caricati con la funzione load_all
+- il NAMESPACE viene generato automaticamente e contiene i pacchetti usati nel progetto
+- la cartella .gitignore contiene tutto quello che viene ingorato da git, come password e altre variabili d'ambiente
+- lanciare usethis::use_devtools() che inserisce dei nuovi file di sistema:
+    .Rbuildingore contiene file che vengono ignorati da R quando deve fare la build
+    
+- lanciare usethis::use_readme_rmd() che crea il README.Rmd
+
+- lanciare usethis::use_proprietary_license("Hypermynds Srl")
+- lanciare usethis::use_github_action() e scegliere il check standard
+- lanciare usethis::use_package_doc() deve verranno inseriti i pacchetti che verranno installati
+
+- lanciare install.package('renv') e renv::activate(); questo crea una cartella renv che inserisce il renv all'interno del pacchetto, in modo che capisca quali dipendenze utilizzare
+
+
+
+
+
+
+
+
