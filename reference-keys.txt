@@ -8,6 +8,11 @@ essential-commands
 setting-up-the-r-development-environment
 set-your-github-personal-access-token
 slack
+mail-signature
+generate-your-html-signature
+create-a-new-signature-on-apple-mail
+paste-your-html-signature
+test-your-signature
 time-report
 absence-from-work
 paid-time-off
