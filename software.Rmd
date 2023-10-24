@@ -9,4 +9,5 @@ This is a preliminary list of software handbooks to start with:
 - [Lubridate](https://lubridate.tidyverse.org)
 - [R Shiny](https://shiny.rstudio.com)
 - [R6 Classes](https://adv-r.hadley.nz/r6.html)
+- [R Packages](https://r-pkgs.org)
 - [Command Line](https://github.com/jlevy/the-art-of-command-line)
