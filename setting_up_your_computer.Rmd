@@ -267,3 +267,79 @@ To install Slack on your laptop you can use Homebrew:
 
 Then you can access using your work email that you should have received from
 your manager.
+
+## Mail signature
+
+Apple Mail allows you to create a custom HTML signature for your emails. Follow
+the steps below to add a personalized HTML signature using the information from
+the [HubSpot Email Signature Generator](https://www.hubspot.com/email-signature-generator/add-html-signature-mail-mac).
+
+### Generate your HTML signature
+
+Copy and paste in blank text file the HTML below, substituting the templates
+with your own information.
+
+```
+<div style='background: url("https://hm-app-logos.s3.eu-central-1.amazonaws.com/HM+Logo+Blunted+2023.png") no-repeat; background-size: 65px; height: 65px; padding: 0px 0px 15px 0px;'></div>
+<div style="font-family: Helvetica; font-size: 12px; color: rgb(0, 0, 0);">
+  <strong style="font-size: 14px;">
+    {Name} {Surname}
+  </strong>
+  <br>
+  <font color="#ab30d6">
+    {Role}
+  </font>
+  <div style="padding: 10px 0px 0px 0px;">
+    <strong>
+      Hypermynds Srl
+    </strong>
+  </div>
+  HM Factory | Via Sempione, 11 | 20900 Monza | Italy
+  <br>
+  Registered Office | Via Stresa, 15 | 20125 Milano | Italy
+  <br>
+  <a href="mailto:{email}">{email}</a> | {mobile} | <a href="http://hypermynds.com">hypermynds.com</a>
+</div>
+```
+
+Your own role is displayed on [Hypermynds Directory](https://contacts.google.com/directory).
+
+### Create a new signature on Apple Mail
+
+1. In the Preferences window of Apple Mail, click on the **Signatures** tab.
+2. On the left side, you'll see a list of your email accounts. Select the
+account for which you want to add the HTML signature.
+3. Click on the **+** button below the middle column to create a new signature.
+Enter a name for your signature (e.g., "HM").
+4. Add placeholder text to your signature. This text will be replaced by your
+HTML signature, so don’t worry about the content.
+5. Next, close the Settings window, and quit Apple Mail. It's important to
+completely close Apple Mail. When you quit, your signature will be saved in your
+system. This is a placeholder until you implement the HTML signature by
+following the steps below.
+
+### Paste your HTML signature
+
+1. To install your HTML email signature, select **Go > Go to Folder** in the
+Finder menu bar.
+2. In the window, type `~/Library/Mail` and click the **Go** button.
+3. In the new window that appears, click on the folder with the highest number
+following the letter **V**. This folder holds the latest version (probably V10).
+4. Choose **MailData** folder.
+5. Choose **Signatures**.
+6. In the Signatures folder, you’ll see a list of signature files. Look for the
+file you just edited by examining the **Modified** date and open the newest file
+that ends with `.mailsignature`.
+7. Select the entire content of your pre-made HTML signature and copy the data.
+Select the content starting with the `<body>` tag in your `.mailsignature` file
+and replace it with your pre-made HTML data. Do not delete the data above
+`<body>`. Save and close.
+8. Right-click on the mail signature you just edited and choose **Get Info**.
+9. Check the checkbox labeled **Locked** to prevent Apple Mail from overriding
+your new HTML signature. Important: Do not omit this step, otherwise Apple Mail
+will override your signature.
+
+### Test your signature
+
+Compose a new email to test your HTML signature. Send the email to yourself
+to ensure the signature displays correctly.
