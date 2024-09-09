@@ -6,16 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>2 Setting up your computer | The Hypermynds Employee Handbook</title>
 <meta name="author" content="The Hypermynds Team">
-<meta name="generator" content="bookdown 0.36 with bs4_book()">
+<meta name="generator" content="bookdown 0.40 with bs4_book()">
 <meta property="og:title" content="2 Setting up your computer | The Hypermynds Employee Handbook">
 <meta property="og:type" content="book">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2 Setting up your computer | The Hypermynds Employee Handbook">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.5.1/transition.js"></script><script src="libs/bs3compat-0.5.1/tabs.js"></script><script src="libs/bs3compat-0.5.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
-<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><link href="libs/panelset-0.2.6/panelset.css" rel="stylesheet">
-<script src="libs/panelset-0.2.6/panelset.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.8.0/transition.js"></script><script src="libs/bs3compat-0.8.0/tabs.js"></script><script src="libs/bs3compat-0.8.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><link href="libs/panelset-0.3.0/panelset.css" rel="stylesheet">
+<script src="libs/panelset-0.3.0/panelset.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
@@ -174,7 +174,7 @@ screen saver begin.</li>
 <p><a href="https://brew.sh/">Homebrew</a> is the easiest way to install the software and
 keep it updated. To install Homebrew execute the following command in the
 Terminal and follow the instructions:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="setting-up-your-computer.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">/bin/bash</span> <span class="at">-c</span> <span class="st">"</span><span class="va">$(</span><span class="ex">curl</span> <span class="at">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="va">)</span><span class="st">"</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="setting-up-your-computer.html#cb4-1" tabindex="-1"></a><span class="ex">/bin/bash</span> <span class="at">-c</span> <span class="st">"</span><span class="va">$(</span><span class="ex">curl</span> <span class="at">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="va">)</span><span class="st">"</span></span></code></pre></div>
 <p>Once that Homebrew has been installed close the Terminal and open it again, you
 can check if everything is ok executing the command <code>brew --version</code>, you will
 see something like this:</p>
@@ -185,7 +185,7 @@ Homebrew/homebrew-cask (git revision 17172f9d63; last commit 2021-12-21)</code><
 <p>To complete the Homebrew setup you should install also
 <a href="https://github.com/buo/homebrew-cask-upgrade"><code>brew-cask-update</code></a> executing
 the command:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="setting-up-your-computer.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> tap buo/cask-upgrade</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="setting-up-your-computer.html#cb6-1" tabindex="-1"></a><span class="ex">brew</span> tap buo/cask-upgrade</span></code></pre></div>
 <div id="keep-everything-updated" class="section level3" number="2.3.1">
 <h3>
 <span class="header-section-number">2.3.1</span> Keep everything updated<a class="anchor" aria-label="anchor" href="#keep-everything-updated"><i class="fas fa-link"></i></a>
@@ -293,7 +293,7 @@ can add (or update) the line:</p>
 <pre><code>GITHUB_PAT=&lt;PUT HERE THE GITHUB TOKEN AND NOT THESE MEANINGLESS WORDS&gt;</code></pre>
 <p>For security reasons it is a good idea to change the permissions of
 <code>~/.Renviron</code> executing the following command in the Terminal:</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href="setting-up-your-computer.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">chmod</span> 0600 ~/.Renviron</span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href="setting-up-your-computer.html#cb11-1" tabindex="-1"></a><span class="fu">chmod</span> 0600 ~/.Renviron</span></code></pre></div>
 </div>
 </div>
 <div id="slack" class="section level2" number="2.5">
@@ -320,25 +320,18 @@ the <a href="https://www.hubspot.com/email-signature-generator/add-html-signatur
 </h3>
 <p>Copy and paste in blank text file the HTML below, substituting the templates
 with your own information.</p>
-<pre><code>&lt;div style='background: url("https://hm-app-logos.s3.eu-central-1.amazonaws.com/HM+Logo+Blunted+2023.png") no-repeat; background-size: 65px; height: 65px; padding: 0px 0px 15px 0px;'&gt;&lt;/div&gt;
-&lt;div style="font-family: Helvetica; font-size: 12px; color: rgb(0, 0, 0);"&gt;
-  &lt;strong style="font-size: 14px;"&gt;
+<pre><code>&lt;div style="font-family: Helvetica; font-size: 12px; color: rgb(0, 0, 0);"&gt;
+  &lt;div style='background: url("https://hm-app-logos.s3.eu-central-1.amazonaws.com/HM_pittogramma_turchese.png") no-repeat; background-size: 45px; padding: 0px 0px 50px 0px;'&gt;&lt;/div&gt;
+  &lt;div style="font-size: 14px; font-weight: 600; color: #080F32;"&gt;
     {Name} {Surname}
-  &lt;/strong&gt;
-  &lt;br&gt;
-  &lt;font color="#ab30d6"&gt;
-    {Role}
-  &lt;/font&gt;
-  &lt;div style="padding: 10px 0px 0px 0px;"&gt;
-    &lt;strong&gt;
-      Hypermynds Srl
-    &lt;/strong&gt;
   &lt;/div&gt;
-  HM Factory | Via Sempione, 11 | 20900 Monza | Italy
-  &lt;br&gt;
-  Registered Office | Via Stresa, 15 | 20125 Milano | Italy
-  &lt;br&gt;
-  &lt;a href="mailto:{email}"&gt;{email}&lt;/a&gt; | {mobile} | &lt;a href="http://hypermynds.com"&gt;hypermynds.com&lt;/a&gt;
+  &lt;div style="color: #00869C; margin-bottom: 15px; text-transform: uppercase; font-size: 10px; letter-spacing: .05rem;"&gt;
+    {Role}
+  &lt;/div&gt;
+  &lt;div style="font-weight: 600; color: #080f32"&gt;Hypermynds Srl&lt;/div&gt;
+  &lt;div&gt;HM Factory | Via Sempione, 11 | 20900 Monza | Italy&lt;/div&gt;
+  &lt;div&gt;Registered Office | Via Stresa, 15 | 20125 Milano | Italy&lt;/div&gt;
+  &lt;div&gt;&lt;a href="mailto:{email}"&gt;{email}&lt;/a&gt; | {mobile} | &lt;a href="http://hypermynds.com"&gt;hypermynds.com&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 <p>Your own role is displayed on <a href="https://contacts.google.com/directory">Hypermynds Directory</a>.</p>
 </div>
@@ -443,7 +436,7 @@ to ensure the signature displays correctly.</p>
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>The Hypermynds Employee Handbook</strong>" was written by The Hypermynds Team. It was last built on 24/10/2023.</p>
+    <p>"<strong>The Hypermynds Employee Handbook</strong>" was written by The Hypermynds Team. It was last built on 09/09/2024.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
