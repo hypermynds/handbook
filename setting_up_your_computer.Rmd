@@ -280,25 +280,18 @@ Copy and paste in blank text file the HTML below, substituting the templates
 with your own information.
 
 ```
-<div style='background: url("https://hm-app-logos.s3.eu-central-1.amazonaws.com/HM+Logo+Blunted+2023.png") no-repeat; background-size: 65px; height: 65px; padding: 0px 0px 15px 0px;'></div>
 <div style="font-family: Helvetica; font-size: 12px; color: rgb(0, 0, 0);">
-  <strong style="font-size: 14px;">
+  <div style='background: url("https://hm-app-logos.s3.eu-central-1.amazonaws.com/HM_pittogramma_turchese.png") no-repeat; background-size: 45px; padding: 0px 0px 50px 0px;'></div>
+  <div style="font-size: 14px; font-weight: 600; color: #080F32;">
     {Name} {Surname}
-  </strong>
-  <br>
-  <font color="#ab30d6">
-    {Role}
-  </font>
-  <div style="padding: 10px 0px 0px 0px;">
-    <strong>
-      Hypermynds Srl
-    </strong>
   </div>
-  HM Factory | Via Sempione, 11 | 20900 Monza | Italy
-  <br>
-  Registered Office | Via Stresa, 15 | 20125 Milano | Italy
-  <br>
-  <a href="mailto:{email}">{email}</a> | {mobile} | <a href="http://hypermynds.com">hypermynds.com</a>
+  <div style="color: #00869C; margin-bottom: 15px; text-transform: uppercase; font-size: 10px; letter-spacing: .05rem;">
+    {Role}
+  </div>
+  <div style="font-weight: 600; color: #080f32">Hypermynds Srl</div>
+  <div>HM Factory | Via Sempione, 11 | 20900 Monza | Italy</div>
+  <div>Registered Office | Via Stresa, 15 | 20125 Milano | Italy</div>
+  <div><a href="mailto:{email}">{email}</a> | {mobile} | <a href="http://hypermynds.com">hypermynds.com</a></div>
 </div>
 ```
 
