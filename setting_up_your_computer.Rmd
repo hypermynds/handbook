@@ -289,8 +289,7 @@ with your own information.
     {Role}
   </div>
   <div style="font-weight: 600; color: #080f32">Hypermynds Srl</div>
-  <div>HM Factory | Via Sempione, 11 | 20900 Monza | Italy</div>
-  <div>Registered Office | Via Stresa, 15 | 20125 Milano | Italy</div>
+  <div>Via Sempione, 11 | 20900 Monza | Italy</div>
   <div><a href="mailto:{email}">{email}</a> | {mobile} | <a href="http://hypermynds.com">hypermynds.com</a></div>
 </div>
 ```
