@@ -4,37 +4,62 @@ xaringanExtra::use_panelset()
 
 # Setting up your computer
 
-## First-time Git setup
+## Git and GitHub access
 
-The first thing you should do before to use Git is set your identity, open the
-terminal and execute the following commands:
+Hypermynds uses GitHub with SSH authentication. Password-based access is not allowed.
+
+### Configure your Git identity
+
+Open the Terminal and run:
+
+```bash
+git config --global user.name "Your name"
+git config --global user.email "your_email@hypermynds.com"
+```
+
+### Generate your SSH key
+
+Create a dedicated SSH key for GitHub:
+
+```bash
+ssh-keygen -t ed25519 -C "your_email@hypermynds.com" -f ~/.ssh/github -N ""
+```
+
+### Configure SSH
+
+Edit (or create) the file `~/.ssh/config`:
+
+```bash
+open ~/.ssh/config
+```
+
+Add:
 
 ```
-> git config --global user.name "Your name here"
-> git config --global user.email "your_email@hypermynds.com"
+Host github.com
+    AddKeysToAgent yes
+    UseKeychain yes
+    IdentitiesOnly yes
+    IdentityFile ~/.ssh/github
 ```
 
-GitHub no longer accept the password authentication since August 2021, now a
-SSH key must be used to access to your repositories.
+### Upload the key to GitHub
 
-* Open the terminal and execute the following command to create a new SSH key:
-  ```
-  > ssh-keygen -t ed25519 -C "your_email@hypermynds.com" -f ~/.ssh/github -N ""
-  ```
+Copy the public key:
 
-* Open your SSH configuration file with the command `open ~/.ssh/config` (if it
-  doesn't exist create it with the command `touch ~/.ssh/config`) and add the
-  following lines:
-  ```
-  Host github.com
-      AddKeysToAgent yes
-      IdentitiesOnly yes
-      IdentityFile ~/.ssh/github
-  ```
+```bash
+pbcopy < ~/.ssh/github.pub
+```
 
-* Copy your public key with the command `pbcopy < ~/.ssh/github.pub` and paste
-  the key in the section *SSH and GPG keys* of your GitHub settings (click on
-  *New SSH key* button).
+Go to GitHub → Settings → SSH and GPG keys → New SSH key and paste the key.
+
+You can verify everything is working with:
+
+```bash
+ssh -T git@github.com
+```
+
+You should see a welcome message from GitHub.
 
 ## Security and privacy configuration {.panelset}
 
@@ -48,7 +73,8 @@ must follow these guidelines:
     2. scroll until the the *FileVault* section;
     3. click Turn On FileVault;
     4. choose to create a local recovery key and communicate the recovery key
-       to your manager (do not use instant messaging or mail message).
+       to your manager (do not use instant messaging or mail message);
+    5. store the recovery key in the Hypermynds Bitwarden vault.
 
 * Firewall must be enabled:
     1. choose Apple menu (&#63743;) then *System Settings…* and click *Network*;
@@ -76,7 +102,8 @@ must follow these guidelines:
     2. click the *FileVault* tab;
     3. click Turn On FileVault;
     4. choose to create a local recovery key and communicate the recovery key
-       to your manager (do not use instant messaging or mail message).
+       to your manager (do not use instant messaging or mail message);
+    5. store the recovery key in the Hypermynds Bitwarden vault.
 
     ```{r filevault_recovery_key, fig.align = 'center', echo=FALSE, out.width='100%'}
     knitr::include_graphics("figures/setting_up_your_computer/filevault_recovery_key.png")
@@ -101,6 +128,19 @@ must follow these guidelines:
     ```{r security_general_tab, fig.align = 'center', echo=FALSE, out.width='100%'}
     knitr::include_graphics("figures/setting_up_your_computer/security_general_tab.png")
     ```
+
+## Password manager
+
+Hypermynds uses **Bitwarden** as the standard password manager.
+
+All passwords, API tokens, certificates, recovery keys and secrets must be stored in Bitwarden.  
+Storing credentials in browsers, notes, files, Slack or email is not allowed.
+
+Install Bitwarden from Homebrew:
+
+```bash
+brew install --cask bitwarden
+```
 
 ## How to install the software using Homebrew
 
@@ -205,10 +245,12 @@ Homebrew:
 RStudio is installed in your `/Applications` directory, to check if everything
 has been setup correctly it is enough to open it.
 
-### Set your Github Personal Access Token
+## GitHub Personal Access Token (for R and automation)
 
 To interact with private repositories or avoid the GitHub rate limits for
-unauthenticated users you have to create a GitHub Personal Access Token:
+unauthenticated users you have to create a GitHub Personal Access Token.
+
+### Create the token
 
 Open R or RStudio and execute the following commands:
 
@@ -219,7 +261,7 @@ usethis::create_github_token()
 
 R will open your browser and redirect it to the page for creating the token
 (probably it prompt for your password), set the name of the token to "R" and
-the expiration time to 90 days (tokens without expiration are unsecure), leave
+the expiration time to 12 months (tokens without expiration are unsecure), leave
 everything else untouched and click the button "Create token" at the and of the
 page.
 
@@ -234,6 +276,8 @@ background), copy it and close the page.
 knitr::include_graphics("figures/setting_up_your_computer/github_new_pat.png")
 ```
 
+### Store the token
+
 Execute the following R command:
 
 ```r
@@ -244,7 +288,7 @@ Now the file `~/.Renviron` will be opened with your preferred editor, now you
 can add (or update) the line:
 
 ```
-GITHUB_PAT=<PUT HERE THE GITHUB TOKEN AND NOT THESE MEANINGLESS WORDS>
+GITHUB_PAT=ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
 For security reasons it is a good idea to change the permissions of
@@ -253,6 +297,11 @@ For security reasons it is a good idea to change the permissions of
 ```bash
 chmod 0600 ~/.Renviron
 ```
+
+### Store the token in Bitwarden
+
+The GitHub token **must also be saved in Bitwarden** under your Hypermynds vault.
+Do not store tokens in notes, Slack or plain text files.
 
 ## Slack
 
@@ -267,6 +316,10 @@ To install Slack on your laptop you can use Homebrew:
 
 Then you can access using your work email that you should have received from
 your manager.
+
+Never share passwords, tokens, certificates or private keys on Slack, even in private messages.
+
+Slack is not a secure secrets store.
 
 ## Mail signature
 

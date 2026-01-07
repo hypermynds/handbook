@@ -2,7 +2,10 @@
 # Need help debugging build failures? Start at https://github.com/r-lib/actions#where-to-find-help
 on:
   push:
-    branches: [main, master]
+    branches: main
+  pull_request:
+    branches: main
+  workflow_dispatch:
 
 name: bookdown
 
@@ -13,7 +16,7 @@ jobs:
       R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install Pandoc
         uses: r-lib/actions/setup-pandoc@v2
@@ -24,8 +27,11 @@ jobs:
       - name: Install dependencies
         run: Rscript -e "install.packages(c('bookdown', 'bslib', 'downlit', 'knitr', 'xml2', 'xaringanExtra'), repos = 'https://packagemanager.posit.co/cran/__linux__/jammy/latest')"
 
+      - name: Ensure bookdown cache dir exists
+        run: mkdir -p _bookdown_files
+
       - name: Cache bookdown results
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: _bookdown_files
           key: bookdown-${{ hashFiles('**/*Rmd') }}
@@ -34,7 +40,16 @@ jobs:
       - name: Build site
         run: Rscript -e 'bookdown::render_book("index.Rmd", quiet = TRUE)'
 
+      - name: Upload book artifact (PR preview)
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: book-preview
+          path: _book
+          if-no-files-found: error
+
       - name: Deploy to GitHub pages 🚀
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages

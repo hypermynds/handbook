@@ -1,0 +1,130 @@
+# Hypermynds overview
+
+## What Hypermynds does
+
+Hypermynds is a technology company operating in the energy sector.
+
+We build and run software platforms that help energy companies:
+
+- trade electricity and gas on regulated markets  
+- optimize their portfolios and assets (including BESS)  
+- manage contracts, customers and operational workflows  
+- and comply with regulatory and financial requirements  
+
+Our customers are professional operators: utilities, traders, suppliers, asset owners and financial institutions.  
+They rely on our systems to make daily decisions that have real financial and operational impact.
+
+Hypermynds is not a generic software house: we are a **vertical energy-tech company**.
+
+## Our products
+
+Hypermynds develops several platforms, but not all of them play the same role.
+
+At the core of the company there is a family of products dedicated to the **energy market**.  
+These systems are what most customers interact with and what generate most of the company’s revenue.
+
+### Energy platforms
+
+**Domino.** Our trading and optimization platform. Domino connects directly to energy market infrastructures (such as GME and continuous intraday markets) and is used to:
+
+- place and manage orders
+- run algorithmic trading strategies
+- manage portfolios and positions
+- optimize assets such as batteries (BESS)
+
+**Flashlight.** The portfolio and settlement platform. Flashlight is used to:
+
+- analyze traded volumes
+- reconcile market results
+- manage imbalances, margins and settlements
+- and support post-trade operations
+
+**Prism.** The platform used for managing energy communities, contracts and regulatory data, including CER and related processes.
+
+**Stream.** The acquisition and operations portal used by energy suppliers and partners to:
+
+- acquire customers
+- manage contracts and documents
+- and exchange data with banks and external systems
+
+Together, these platforms form an integrated ecosystem for operating in the energy market.
+
+### Other Hypermynds projects
+
+Hypermynds also develops other platforms outside the core energy business.
+
+**Atom** and **Opus** are examples of projects built using the same technological stack and engineering approach, but targeting different business domains.
+
+These projects are part of Hypermynds’ broader strategy, but they are distinct from the energy-market products described above.
+
+## How Hypermynds makes money
+
+Hypermynds operates a mixed model based on:
+
+- software subscriptions  
+- setup and onboarding fees  
+- and, in some cases, project-based development  
+
+We invest heavily in building reusable platforms.  
+This means that the quality, stability and maintainability of the codebase directly affect the company’s long-term success.
+
+Every hour of work, every line of code and every operational decision contributes to the economic sustainability of the company.
+
+## Why our software is critical
+
+Much of our software interacts with:
+
+- regulated energy markets  
+- financial systems  
+- and customer production environments  
+
+This has important consequences:
+
+- bugs can cause real financial losses  
+- outages can block customer operations  
+- security issues can have legal and regulatory impact  
+
+For this reason, we place strong emphasis on:
+
+- correctness  
+- security  
+- traceability  
+- and controlled deployments  
+
+Working at Hypermynds means taking responsibility for systems that matter.
+
+## What kind of company this is
+
+Hypermynds is:
+
+- not a consultancy  
+- not body rental  
+- and not a generic SaaS  
+
+We build **products**, not just projects.
+
+This means that we think in terms of:
+
+- long-term architecture  
+- product quality  
+- scalability  
+- and sustainability  
+
+We work with customers, but we do not outsource our technical or strategic decisions.
+
+## What we expect from people
+
+We expect everyone at Hypermynds to act with:
+
+- ownership of their work  
+- attention to detail  
+- and respect for colleagues and customers  
+
+People here are expected to:
+
+- communicate clearly  
+- ask questions when something is unclear  
+- and take responsibility for the systems they work on  
+
+We value collaboration, but we also value individual accountability.  
+Everyone contributes to the reliability, reputation and success of the company.

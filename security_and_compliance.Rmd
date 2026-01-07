@@ -1,0 +1,141 @@
+# Security and compliance
+
+Hypermynds operates in regulated energy and financial environments.  
+Our systems handle:
+
+- market orders  
+- customer data  
+- financial information  
+- authentication credentials  
+- and regulatory processes  
+
+Security is therefore not optional: it is part of everyone’s job.
+
+## Access control
+
+Access to Hypermynds systems is granted on a **need-to-know basis**.
+
+You will receive access only to:
+
+- the services  
+- environments  
+- and data  
+
+that are required for your role.
+
+Do not:
+
+- share accounts  
+- share credentials  
+- or use someone else’s access  
+
+If you need additional access, request it through your manager or HR.
+
+## Authentication and identity
+
+Hypermynds uses centralized identity management (e.g. Auth0, Google Workspace and other identity providers).
+
+You must:
+
+- use strong, unique passwords  
+- enable multi-factor authentication (MFA) wherever available  
+- and keep your account recovery information up to date  
+
+Never disable MFA on company systems.
+
+## Secrets and credentials
+
+All secrets must be stored in **Bitwarden** or in approved secure systems.
+
+This includes:
+
+- passwords  
+- API tokens  
+- SSH keys  
+- certificates  
+- and recovery keys  
+
+Secrets must **never** be:
+
+- sent via email  
+- shared on Slack  
+- stored in code repositories  
+- or saved in plain text files  
+
+If you believe a secret has been exposed, report it immediately.
+
+## Customer and market data
+
+Data from customers, energy markets and partners must be handled with care.
+
+Do not:
+
+- copy customer data to personal devices  
+- upload it to external services  
+- or share it outside Hypermynds  
+
+Use only approved tools and environments to access and process sensitive data.
+
+## Production systems
+
+Production environments contain live customer and market data.
+
+Only authorized personnel may access or modify production systems.
+
+Do not:
+
+- run experiments  
+- test scripts  
+- or ad-hoc changes  
+
+directly in production.
+
+All changes must follow the defined deployment and approval process.
+
+## Certificates and market credentials
+
+Hypermynds uses digital certificates and cryptographic credentials to access energy market platforms (such as GME).
+
+These credentials:
+
+- are legally binding  
+- can place real market orders  
+- and may have regulatory impact  
+
+They must be:
+
+- stored securely  
+- accessed only when required  
+- and never copied or shared  
+
+Misuse of these credentials can have serious financial and legal consequences.
+
+## Compliance and audits
+
+Hypermynds may be subject to:
+
+- customer audits  
+- regulatory requirements  
+- and internal controls  
+
+You may be asked to:
+
+- document processes  
+- provide logs  
+- or explain how systems work  
+
+This is normal in a regulated environment.  
+Always provide accurate and complete information.
+
+## Reporting issues
+
+If you notice:
+
+- a security weakness
+- a data leak  
+- suspicious activity  
+- or a process that puts compliance at risk  
+
+report it immediately to your manager or to HR.
+
+Early reporting protects both you and the company.

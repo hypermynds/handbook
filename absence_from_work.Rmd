@@ -1,39 +1,49 @@
 # Absence from work
 
-It may happen that you have to take some time off basically for two reasons:
-either because you have taken vacation or because you don't feel well.
+Absences from work can occur mainly for two reasons:
 
-## Paid Time Off
+- planned time off (vacation or permits)  
+- illness  
 
-Your Hypermynds employment contract includes a number of hours per year that you
-can take as paid leave. In particular, these are:
+Hypermynds manages absences in accordance with Italian labor law and the applicable collective agreement (CCNL).
 
-- 26 days of vacation and
-- 32 hours of permits
+## Paid time off (vacation and permits)
 
-We ask you to [track your time off](https://clockify.me/timesheet) so we can
-properly compensate you for unsued time. Your vacation time is prorated your
-first year working @Hypermynds but, if you need more time off, you can go
-negative with basicly no effects.
+Your employment contract specifies:
 
-In principle, it is possible to request vacations and permits at any time of the
-year, compatibly with the workload and deadlines of your team and always sharing
-it in advance with your manager.
+- your annual vacation entitlement  
+- your annual paid permits (ROL or similar)  
 
-To formalize the request it is necessary to send an email to your manager using
-the following scheme:
+These amounts are accrued progressively during the year, in line with Italian law.
 
-- **Subject**: Vacation Request / Permit Request
-- **Text**: Indicate exactly the days/hours you intend to request
-- **Reason**: A concise description of the reason for the request
+All time off must be recorded in [Clockify](https://clockify.me/timesheet) so that:
 
-## Sick days
+- payroll is calculated correctly  
+- accrued and used time is tracked accurately  
 
-In case you feel unwell please let your manager know as soon as possible so that
-your workload can be redistributed among other colleagues.
+Vacation and permits should be requested **in advance** and agreed with your manager, taking into account:
 
-Usually your doctor decides how many days you need to get back into shape. In
-this case it is mandatory to ask your doctor for the **digital certificate** and
-communicate the protocol number to your manager. This way, Hypermynds will be
-able to open a file for you with the National Institute for Social Security
-(INPS).
+- team workload  
+- project deadlines  
+- business needs  
+
+To request time off, send an email to **hr@hypermynds.com** with:
+
+- **Subject**: Vacation request / Permit request  
+- **Dates or hours requested**  
+- **Type of leave** (vacation or permit)  
+
+Your manager will be included in the approval process.
+
+The request is considered approved only after confirmation by your manager.
+
+## Sick leave
+
+If you feel unwell and cannot work, inform your manager as soon as possible.
+
+In Italy, sick leave is managed through the National Institute for Social Security (INPS).  
+Your doctor will issue a **digital medical certificate** and provide you with a **protocol number**.
+
+You must communicate this protocol number to Hypermynds so the company can properly register the sick leave with INPS.
+
+Do not come to the office or work remotely if you are medically unfit to work.
