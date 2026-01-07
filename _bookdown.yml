@@ -2,6 +2,9 @@ delete_merged_file: true
 rmd_files:
   - index.Rmd
   - introduction.Rmd
+  - hypermynds_overview.Rmd
+  - how_we_work.Rmd
+  - security_and_compliance.Rmd
   - setting_up_your_computer.Rmd
   - time_report.Rmd
   - absence_from_work.Rmd

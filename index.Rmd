@@ -6,16 +6,24 @@ date: "`r format(Sys.Date(), '%d/%m/%Y')`"
 
 # The Hypermynds Employee Handbook {-}
 
-This handbook is designed to contain all the answers to questions a new employee
-at Hypermynds may have. At the moment the document is still work in progress,
-therefore the contents will be added on a case-by-case basis over the next few
-weeks.
+Welcome to Hypermynds.
 
-The topics that will be covered are many, from the more technical ones related
-to the initial setup of the laptop to those more related to life in the company.
+This handbook is the primary reference for anyone working at Hypermynds.  
+Its goal is to make every team member able to work **effectively, safely and independently** in a company that operates complex technology in regulated energy markets.
 
-Of course new contributions to the handbook are warmly welcomed: if you think
-that something is missing you can try to write a section by your own and propose
-a [Pull Request](https://github.com/hypermynds/handbook/pulls) or suggest the
-missing content opening an
-[Issue](https://github.com/hypermynds/handbook/issues) on GitHub.
+Here you will find:
+
+- practical information on how to set up and use your work tools  
+- rules and processes that govern daily work  
+- guidelines on how we build, deploy and operate our software  
+- references on how we interact with colleagues, customers and partners  
+
+The handbook is a **living document**: it evolves together with the company.  
+Whenever something is unclear, missing or outdated, improving this handbook is considered part of everyone’s responsibility.
+
+If you would like to contribute:
+
+- you can propose a change via a [Pull Request](https://github.com/hypermynds/handbook/pulls)  
+- or suggest new content by opening an [Issue](https://github.com/hypermynds/handbook/issues)  
+
+Keeping this handbook accurate and up to date is one of the ways we make Hypermynds a place where people can do their best work.

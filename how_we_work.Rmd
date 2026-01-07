@@ -1,0 +1,167 @@
+# How we work
+
+This chapter describes how work is organized at Hypermynds and how decisions, development and operations are handled.
+
+The goal is not bureaucracy, but clarity: when everyone understands how things work, we can move faster and with fewer mistakes.
+
+## Ownership and responsibility
+
+At Hypermynds, every piece of work has an owner.
+
+The owner is responsible for:
+
+- understanding what needs to be done
+- ensuring it is done correctly
+- and communicating clearly about its status
+
+Ownership does not mean working alone.  
+It means being accountable for the outcome.
+
+## Products before projects
+
+We build and operate long-lived products, not just one-off projects.
+
+This means that:
+
+- code is written to be maintained
+- shortcuts are avoided when they create long-term problems
+- and decisions are evaluated based on their impact over time
+
+Customer requests are important, but they are always balanced against the integrity and evolution of the product.
+
+## Communication
+
+We use different tools for different purposes:
+
+- **Slack** for day-to-day communication, coordination and quick questions
+- **Email** for formal requests, approvals and external communication
+- **Issues and Pull Requests** for technical work
+
+Important decisions must be documented in writing, either in:
+
+- a GitHub issue
+- or a Pull Request
+- or an internal document
+
+Verbal agreements or Slack messages are not enough for decisions that affect products or customers.
+
+## Working hours and presence
+
+Hypermynds works as a highly collaborative team.  
+For this reason, having overlapping working hours and predictable availability is important.
+
+The standard working schedule is:
+
+- **Office days**: Monday to Thursday  
+- **Remote day**: Friday  
+
+- **Working hours**: 09:00 – 18:00  
+- **Lunch break**: 13:00 – 14:00  
+
+To allow some flexibility, the daily start time can vary within a defined window:
+
+- You may start at **08:30** and finish at **17:30**  
+- You may start at **09:00** and finish at **18:00**  
+- In exceptional situations (transport delays, personal issues, etc.) you may start as late as **09:30** and finish at **18:30**
+
+This flexibility is designed to absorb real-life variability while still keeping the team aligned.
+
+Arrivals later than 09:30 are treated as partial absences and are recorded as paid permits, with a granularity of **15 minutes** (for example, arriving at 09:31 is recorded as 09:45).
+
+This system is not meant to control people, but to ensure fairness, transparency and correct payroll and leave accounting for everyone.
+
+## Remote work and availability
+
+Remote work at Hypermynds is based on trust and autonomy.
+
+At the same time, working remotely requires ensuring availability and responsiveness so that the team can collaborate effectively.
+
+When working remotely, you are expected to:
+
+- be reachable via **Slack** during working hours
+- join calls or meetings when needed
+- respond within a reasonable time to messages from your team or manager
+
+Remote work does not mean working in isolation.
+If you need to be temporarily unavailable (appointments, personal matters, etc.), communicate it in advance to your team or manager.
+
+This ensures that remote work remains effective and aligned with team needs.
+
+## Development workflow
+
+All development work follows the same basic process:
+
+1. A task or problem is defined in a GitHub issue
+2. Work is done on a dedicated branch
+3. Changes are submitted via a Pull Request
+4. The Pull Request is reviewed before being merged
+
+Direct commits to main or production branches are not allowed.
+
+## Code reviews
+
+Code reviews are not a formality.
+They exist to:
+
+- catch bugs
+- improve design
+- share knowledge
+- and keep quality high
+
+Reviews should be:
+
+- constructive
+- focused on the code
+- and aimed at improving the final result
+
+If something is unclear, ask.
+If something is wrong, say it.
+
+## Environments and deployments
+
+Hypermynds operates multiple environments (development, staging and production).
+
+Production systems are used by customers and must be treated with care.
+
+Only authorized people can deploy to production, and:
+
+- changes must be traceable
+- and, when possible, reversible
+
+Never experiment directly on production systems.
+
+## Incidents and problems
+
+When something goes wrong in production:
+
+- fixing the problem is the first priority
+- understanding why it happened comes next
+
+There is no blame for honest mistakes.
+There is responsibility for learning from them and preventing them from happening again.
+
+## Working with customers
+
+Customers trust Hypermynds with critical parts of their business.
+
+This means:
+
+- be precise in what you say
+- do not promise what you are not sure can be delivered
+- and escalate problems early rather than hiding them
+
+It is better to say “we need to investigate” than to give a wrong answer.
+
+## Continuous improvement
+
+Hypermynds is always evolving.
+
+If you see:
+
+- a process that does not work
+- documentation that is missing
+- or a recurring problem
+
+you are encouraged to propose improvements.
+
+Making the company work better is part of everyone’s job.
