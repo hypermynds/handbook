@@ -5,15 +5,22 @@
 <!-- badges: end -->
 
 This handbook is designed to contain all the answers to questions a new employee
-at Hypermynds may have. At the moment the document is still work in progress,
-therefore the contents will be added on a case-by-case basis over the next few
-weeks.
+at Hypermynds may have. It is maintained as a living document and is updated as
+company processes, tools and responsibilities evolve.
 
-The topics that will be covered are many, from the more technical ones related
-to the initial setup of the laptop to those more related to life in the company.
+Topics span both technical and organizational areas, from setting up your
+computer to day-to-day company processes.
 
-Of course new contributions to the handbook are warmly welcomed: if you think
-that something is missing you can try to write a section by your own and propose
-a [Pull Request](https://github.com/hypermynds/handbook/pulls) or suggest the
-missing content opening an
+Contributions to the handbook are warmly welcomed: if you think something is
+missing, you can propose a section yourself via a
+[Pull Request](https://github.com/hypermynds/handbook/pulls) or suggest missing
+content by opening an
 [Issue](https://github.com/hypermynds/handbook/issues) on GitHub.
+
+## Build locally
+
+To render the handbook locally, run in R:
+
+```r
+bookdown::render_book("index.Rmd", "bookdown::bs4_book")
+```

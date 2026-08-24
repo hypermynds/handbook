@@ -1,6 +1,6 @@
 # Absence from work
 
-Absences from work can occur mainly for two reasons:
+Absences from work typically occur for two primary reasons:
 
 - planned time off (vacation or permits)  
 - illness  
@@ -37,6 +37,9 @@ Your manager will be included in the approval process.
 
 The request is considered approved only after confirmation by your manager.
 
+Once approved, record the absence in [Clockify](https://clockify.me/timesheet)
+using the appropriate leave project.
+
 ## Sick leave
 
 If you feel unwell and cannot work, inform your manager as soon as possible.
@@ -45,5 +48,9 @@ In Italy, sick leave is managed through the National Institute for Social Securi
 Your doctor will issue a **digital medical certificate** and provide you with a **protocol number**.
 
 You must communicate this protocol number to Hypermynds so the company can properly register the sick leave with INPS.
+
+Send the protocol number to **hr@hypermynds.com** and copy your manager, so HR and your team can update payroll and planning.
+
+When possible, also record the sick leave in [Clockify](https://clockify.me/timesheet) under the dedicated leave project.
 
 Do not come to the office or work remotely if you are medically unfit to work.

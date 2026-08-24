@@ -7,7 +7,7 @@ We design and run software systems that help energy companies trade, forecast, m
 This means that what we build is not “just software”:
 it directly affects how our customers interact with markets, regulators and large volumes of money.
 
-For this reason, working at Hypermynds requires a mix of:
+For this reason, working at Hypermynds requires:
 
 - technical rigor  
 - attention to detail  

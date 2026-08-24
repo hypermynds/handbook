@@ -9,7 +9,7 @@ date: "`r format(Sys.Date(), '%d/%m/%Y')`"
 Welcome to Hypermynds.
 
 This handbook is the primary reference for anyone working at Hypermynds.  
-Its goal is to make every team member able to work **effectively, safely and independently** in a company that operates complex technology in regulated energy markets.
+Its goal is to enable every team member to work **effectively, safely and independently** in a company that operates complex technology in regulated energy markets.
 
 Here you will find:
 

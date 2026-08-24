@@ -43,6 +43,8 @@ Important decisions must be documented in writing, either in:
 - or a Pull Request
 - or an internal document
 
+The goal is traceability: decisions that affect products or customers must be easy to find and review.
+
 Verbal agreements or Slack messages are not enough for decisions that affect products or customers.
 
 ## Working hours and presence
@@ -54,7 +56,6 @@ The standard working schedule is:
 
 - **Office days**: Monday to Thursday  
 - **Remote day**: Friday  
-
 - **Working hours**: 09:00 – 18:00  
 - **Lunch break**: 13:00 – 14:00  
 

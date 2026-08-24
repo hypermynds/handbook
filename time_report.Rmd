@@ -34,8 +34,8 @@ knitr::include_graphics("figures/time_report/clockify_edit_form.png")
 
 Time must be entered:
 
-* **at the end of each working day**, or
-* **at the latest by the end of the week**
+- **at the end of each working day**, or
+- **at the latest by the end of the week**
 
 Leaving timesheets empty or filling them retroactively from memory leads to incorrect data and is not acceptable.
 
@@ -43,9 +43,9 @@ Leaving timesheets empty or filling them retroactively from memory leads to inco
 
 You will find dedicated projects in Clockify for:
 
-* vacation and time off
-* sick leave
-* internal meetings and administration
+- vacation and time off
+- sick leave
+- internal meetings and administration
 
 If you are unsure which project to use, or if a project is missing, ask your manager **before** logging time.
 
