@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>5 Setting up your computer | The Hypermynds Employee Handbook</title>
 <meta name="author" content="The Hypermynds Team">
-<meta name="generator" content="bookdown 0.47 with bs4_book()">
+<meta name="generator" content="bookdown 0.48 with bs4_book()">
 <meta property="og:title" content="5 Setting up your computer | The Hypermynds Employee Handbook">
 <meta property="og:type" content="book">
 <meta name="twitter:card" content="summary">
@@ -90,12 +90,18 @@ not with a personal Apple account.</p>
 <p>At first boot:</p>
 <ol style="list-style-type: decimal">
 <li>connect the Mac to a reliable network;</li>
+<li>when the setup assistant asks you to enrol or activate the company profile,
+sign in with your company email address and the same password used for your
+Google Workspace account;</li>
 <li>complete the setup assistant without disconnecting;</li>
 <li>create your local user if prompted;</li>
 <li>if Apple sign-in is requested, use your managed company Apple account;</li>
 <li>keep the Mac connected to the Internet while apps and configurations are downloaded.</li>
 </ol>
 <p>Initial setup can continue for several minutes after the desktop appears.</p>
+<p>If the company profile is not activated during the first startup, activate it
+afterwards from <strong>System Settings &gt; General &gt; Device Management</strong> using your
+company email address and your Google Workspace password.</p>
 </div>
 <div id="what-is-configured-automatically" class="section level2" number="5.3">
 <h2>
@@ -112,8 +118,7 @@ not with a personal Apple account.</p>
 <li>FileVault encryption with managed recovery key escrow;</li>
 <li>company Wi-Fi settings, where applicable;</li>
 <li>Bitwarden;</li>
-<li>Slack;</li>
-<li>WireGuard app.</li>
+<li>Slack.</li>
 </ul>
 </div>
 <div id="hm-tech-technical-team-only" class="section level3" number="5.3.2">
@@ -224,11 +229,15 @@ stored in Bitwarden. Do not store secrets in browser storage, notes, email, or S
 </h3>
 <p>If your role requires VPN access:</p>
 <ol style="list-style-type: decimal">
+<li>install WireGuard manually from the Mac App Store;</li>
 <li>create and configure your personal WireGuard access following Operations/IT instructions;</li>
 <li>activate the tunnel;</li>
 <li>verify access to the internal target shared by Operations/IT;</li>
 <li>never share your VPN credentials/profile or reuse them on unauthorized devices.</li>
 </ol>
+<p>WireGuard is installed by the user instead of being deployed automatically with
+the company profile, because automatic installation can create conflicts on some
+managed Macs.</p>
 </div>
 <div id="additional-manual-steps-for-technical-team-members" class="section level3" number="5.5.5">
 <h3>
@@ -459,7 +468,7 @@ to ensure the signature displays correctly.</p>
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>The Hypermynds Employee Handbook</strong>" was written by The Hypermynds Team. It was last built on 24/08/2026.</p>
+    <p>"<strong>The Hypermynds Employee Handbook</strong>" was written by The Hypermynds Team. It was last built on 31/08/2026.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
