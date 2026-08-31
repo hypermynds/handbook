@@ -55,6 +55,12 @@ generate-your-html-signature
 create-a-new-signature-on-apple-mail
 paste-your-html-signature
 test-your-signature
+r-learning-resources
+recommended-learning-path
+core-r-and-data-science
+packages-and-project-structure
+applications-and-reporting
+advanced-r-topics
 time-report
 how-to-fill-your-timesheet
 when-to-report-time
