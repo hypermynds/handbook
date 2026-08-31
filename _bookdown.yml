@@ -6,5 +6,6 @@ rmd_files:
   - how_we_work.Rmd
   - security_and_compliance.Rmd
   - setting_up_your_computer.Rmd
+  - r_learning_resources.Rmd
   - time_report.Rmd
   - absence_from_work.Rmd

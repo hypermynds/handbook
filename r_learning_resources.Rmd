@@ -1,0 +1,70 @@
+# R learning resources
+
+Hypermynds uses R extensively for data analysis, automation, dashboards and
+internal tools. The resources below are useful references for building strong,
+maintainable R skills in our technical work.
+
+The goal is not to study everything before contributing. Start from the core
+workflow, then use the more advanced material when you meet it in a real project.
+
+## Recommended learning path
+
+1. Learn the core data workflow: importing data, transforming it, visualizing it
+   and writing reproducible analyses.
+2. Learn how R projects are organized, documented, tested and made reproducible.
+3. Learn Shiny and reporting tools when working on dashboards, apps or documents.
+4. Learn advanced language features such as R6 classes when a project uses more
+   structured or stateful code.
+
+## Core R and data science
+
+Most R work starts with scripts, functions, data frames and reproducible data
+analysis. These skills are the foundation for reading existing code, reviewing
+changes and building reliable internal tools.
+
+- [R for Data Science](https://r4ds.had.co.nz/) introduces the tidyverse,
+  data transformation, visualization and reproducible analysis workflows.
+- [Tidyverse style guide](https://style.tidyverse.org/) defines practical
+  conventions for readable, consistent R code.
+
+## Packages and project structure
+
+R code that is used by more than one person should be easy to install, test and
+maintain. Package structure is useful even for internal code because it creates
+clear boundaries between functions, documentation, tests and dependencies.
+
+- [R Packages](https://r-pkgs.org/) is the main reference for creating,
+  documenting, testing and publishing R packages.
+- [renv](https://rstudio.github.io/renv/) explains how to manage project-level
+  package dependencies reproducibly.
+- [testthat](https://testthat.r-lib.org/) documents the standard testing
+  framework used in many R projects.
+
+## Applications and reporting
+
+Some Hypermynds work is delivered through dashboards, reports or long-form
+documentation rather than scripts alone. These tools help turn R analysis into
+interfaces and documents that other people can use, review and maintain.
+
+- [Mastering Shiny](https://mastering-shiny.org/) is the reference for building
+  Shiny applications, from basic reactivity to production-quality structure.
+- [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
+  covers reports, documents and reproducible communication.
+- [bookdown](https://bookdown.org/yihui/bookdown/) explains how to build books
+  and long-form documentation, including this handbook.
+
+## Advanced R topics
+
+Not all R code is simple script-based analysis. Some projects use more structured
+patterns, especially when the code needs to manage state, communicate with
+external systems or expose reusable services.
+
+R6 is R's reference-based object-oriented system. It is useful when an object
+needs to keep internal state over time, such as an API client, a Shiny module
+controller or a long-running service. You do not need to use R6 everywhere, but
+you should be able to read it confidently when you find it in a project.
+
+- [Advanced R](https://adv-r.hadley.nz/) explains the language internals that
+  matter when writing robust abstractions and debugging complex code.
+- [R6 classes](https://adv-r.hadley.nz/r6.html) covers object-oriented R with
+  R6, including public methods, private fields and reference semantics.
