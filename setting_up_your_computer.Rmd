@@ -24,12 +24,19 @@ not with a personal Apple account.
 At first boot:
 
 1. connect the Mac to a reliable network;
-2. complete the setup assistant without disconnecting;
-3. create your local user if prompted;
-4. if Apple sign-in is requested, use your managed company Apple account;
-5. keep the Mac connected to the Internet while apps and configurations are downloaded.
+2. when the setup assistant asks you to enrol or activate the company profile,
+   sign in with your company email address and the same password used for your
+   Google Workspace account;
+3. complete the setup assistant without disconnecting;
+4. create your local user if prompted;
+5. if Apple sign-in is requested, use your managed company Apple account;
+6. keep the Mac connected to the Internet while apps and configurations are downloaded.
 
 Initial setup can continue for several minutes after the desktop appears.
+
+If the company profile is not activated during the first startup, activate it
+afterwards from **System Settings > General > Device Management** using your
+company email address and your Google Workspace password.
 
 ## What is configured automatically
 
@@ -42,8 +49,7 @@ All company Macs receive the **HM People** baseline, including:
 - FileVault encryption with managed recovery key escrow;
 - company Wi-Fi settings, where applicable;
 - Bitwarden;
-- Slack;
-- WireGuard app.
+- Slack.
 
 ### HM Tech (technical team only)
 
@@ -133,10 +139,15 @@ Safari is available by default. Install Google Chrome only if your workflow requ
 
 If your role requires VPN access:
 
-1. create and configure your personal WireGuard access following Operations/IT instructions;
-2. activate the tunnel;
-3. verify access to the internal target shared by Operations/IT;
-4. never share your VPN credentials/profile or reuse them on unauthorized devices.
+1. install WireGuard manually from the Mac App Store;
+2. create and configure your personal WireGuard access following Operations/IT instructions;
+3. activate the tunnel;
+4. verify access to the internal target shared by Operations/IT;
+5. never share your VPN credentials/profile or reuse them on unauthorized devices.
+
+WireGuard is installed by the user instead of being deployed automatically with
+the company profile, because automatic installation can create conflicts on some
+managed Macs.
 
 ### Additional manual steps for technical team members
 
